@@ -32,7 +32,7 @@ def lines_to_sheet():
                 row=file_lines.index(line) + 2, column=file_position
             ).value = line
             #alternative value=text[line] instead of ().value = line
-    filename = "Separated_lines_from_" + Path.cwd().name + ".xlsx"
+    filename = f"Separated_lines_from_{f.name}.xlsx"
     try:
         wb.save(filename)
     except PermissionError:
