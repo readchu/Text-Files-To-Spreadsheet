@@ -3,7 +3,7 @@
 # several text files (for now, in CWD) and insert those contents
 # into a spreadsheet, with one line of text per row.
 
-import sys, openpyxl, pyinputplus as pyip
+import sys, openpyxl
 from pathlib import Path
 import logging
 
